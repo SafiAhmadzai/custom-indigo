@@ -8,14 +8,17 @@
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="container about">
         <h1>
-            <%block name="pageheader">${page_header or _("About")}</%block>
+            <%block name="pageheader">${page_header or _("Welcome to iMMAP Elearning Platform")}</%block>
         </h1>
         <p>
-            <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
+            <%block name="pagecontent">${page_content or _("iMMAP is an international not-for-profit organization that provides information
+            management services to humanitarian and development stakeholders, enabling
+            partners to make informed decisions that ultimately provide high-quality
+            targeted assistance to the world’s most vulnerable populations.")}</%block>
         </p>
         <!-- NEW IN INDIGO: add graphic image -->
         <div class="graphic-img">
-            <img src="${static.url('images/about.svg')}" alt="Runs on Tutor" />
+            <img src="${static.url('images/immap.png')}" alt="immap about us" />
         </div>
     </section>
 </main>
